@@ -29,7 +29,14 @@
             android:textSize="18sp"
             android:paddingTop="8dp"
             android:text="Coffee Shop"/>
-
+        <TextView
+            android:id="@+id/textViewSubtit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle=""
+            android:textSize="15sp"
+            android:paddingTop="8dp"
+            android:text="Coffee Subtitle"/>
         <RatingBar
             android:id="@+id/ratingBarCoffee"
             style="?android:attr/ratingBarStyleSmall"

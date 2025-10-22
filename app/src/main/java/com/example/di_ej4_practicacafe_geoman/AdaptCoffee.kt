@@ -15,6 +15,8 @@ class AdaptCoffee(
     inner class CoffeeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageViewCoffee: ImageView = itemView.findViewById(R.id.imageViewCoffee)
         val textViewName: TextView = itemView.findViewById(R.id.textViewName)
+
+        val textViewSubtit: TextView = itemView.findViewById(R.id.textViewSubtit)
         val ratingBar: RatingBar = itemView.findViewById(R.id.ratingBarCoffee)
         val textViewRating: TextView = itemView.findViewById(R.id.textViewRating)
     }
@@ -29,6 +31,7 @@ class AdaptCoffee(
 
         holder.imageViewCoffee.setImageResource(item.imageResId)
         holder.textViewName.text = item.name
+        holder.textViewSubtit.text = item.subtit
         holder.ratingBar.rating = item.rating
         holder.textViewRating.text = "Puntuación: %.1f".format(item.rating)
 
